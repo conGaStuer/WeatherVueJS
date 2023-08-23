@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.weather__app {
+  width: 300px;
+  height: 500px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../Style/backgr.jpg);
+  color: whitesmoke;
+  border-radius: 10px;
+}
+.weather__app--container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.search__bar {
+  width: 90%;
+  height: 15%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+input {
+  height: 60%;
+  width: 80%;
+  border-radius: 20px;
+  border: none;
+  outline: 1px solid black;
+  text-indent: 12px;
+  font-size: 14px;
+}
+input:focus {
+  box-shadow: inset 0 1px 2px 1px rgb(93, 91, 91);
+}
+::-webkit-input-placeholder {
+  font-weight: bold;
+  padding-left: 5px;
+}
+.search_btn {
+  height: 55%;
+  width: 15%;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.search_btn:active {
+  border: 1px solid black;
+}
+.error {
+  width: 90%;
+  height: 5%;
+
+  position: relative;
+  top: -15px;
+}
+.body {
+  width: 90%;
+  height: 78%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.temp__bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.temp {
+  font-size: 50px;
+  font-weight: bold;
+}
+.description {
+  font-size: 18px;
+  position: relative;
+  top: -5px;
+}
+.day__bar {
+  width: 90%;
+  height: 30%;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.day {
+  font-size: 30px;
+  font-weight: bold;
+}
+.day__info {
+  font-size: 20px;
+  font-weight: bold;
+}
